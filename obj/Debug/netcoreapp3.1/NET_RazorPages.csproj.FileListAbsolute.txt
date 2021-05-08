@@ -39,3 +39,5 @@ D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\NET_Razo
 D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\NET_RazorPages.pdb
 D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\NET_RazorPages.genruntimeconfig.cache
 D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\NET_RazorPages.csproj.CopyComplete
+D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\Razor\Pages\Research.cshtml.g.cs
+D:\Coding\BachelorproefProjecten\NET_RazorPages\obj\Debug\netcoreapp3.1\Razor\Pages\AddResearch.cshtml.g.cs
