@@ -15,8 +15,10 @@ namespace NET_RazorPages.Pages
         public List<ResearchModel> ResearchList;
         public bool IsLoading;
 
-        public void OnGet(int page=1)
+        public void OnGet(bool loading=true)
         {
+            IsLoading = loading;
+
             //Create list
             ResearchList = new List<ResearchModel>();
 

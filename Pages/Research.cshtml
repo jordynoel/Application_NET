@@ -10,9 +10,13 @@
 
 @if (Model.IsLoading)
 {
+    
+<div class="text-center">
     <div class="spinner-border text-center" role="status">
         <span class="sr-only">Loading...</span>
     </div>
+    <p><a class="btn btn-danger" href="Research?loading=false">Stop loading</a></p>
+</div>
 }
 else { 
 <table id="myTable" class="table table-striped" >
