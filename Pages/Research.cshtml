@@ -4,56 +4,59 @@
     ViewData["Title"] = "Research overview";
     int Id = 1;
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>There are @Model.ResearchList.Count Papers in this list</p>
 
 @if (Model.IsLoading)
 {
-    
-<div class="text-center">
-    <div class="spinner-border text-center" role="status">
-        <span class="sr-only">Loading...</span>
+        <h1>Loading</h1>
+
+    <div class="text-center">
+        <div class="spinner-border text-center" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p><a class="btn btn-danger" href="Research?loading=false">Stop loading</a></p>
     </div>
-    <p><a class="btn btn-danger" href="Research?loading=false">Stop loading</a></p>
-</div>
 }
-else { 
-<table id="myTable" class="table table-striped" >
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th scope="col">Url</th>
-            <th scope="col">Pages</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Model.ResearchList)
-        {
+else
+{
+    <h1>@ViewData["Title"]</h1>
+
+    <p>There are @Model.ResearchList.Count Papers in this list</p>
+    <table id="myTable" class="table table-striped">
+        <thead>
             <tr>
-                <th scope="row">@Id</th>
-                <td>@r.Title</td>
-                <td>@r.Author</td>
-                <td><a href="@r.Url">@r.Url</a></td>
-                <td>@r.Pages</td>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Url</th>
+                <th scope="col">Pages</th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model.ResearchList)
+            {
+                <tr>
+                    <th scope="row">@Id</th>
+                    <td>@r.Title</td>
+                    <td>@r.Author</td>
+                    <td><a href="@r.Url">@r.Url</a></td>
+                    <td>@r.Pages</td>
+                </tr>
 
-            Id++;
+                Id++;
 
-        }
-    </tbody>
-</table>
-<nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
-</nav>
+            }
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
 }
 
 

@@ -1,7 +1,6 @@
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\cypress.json
-D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\cypress\fixtures\example.json
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\package-lock.json
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\package.json
 D:\Coding\BachelorproefProjecten\NET_RazorPages\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
